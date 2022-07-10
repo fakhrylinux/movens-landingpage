@@ -72,22 +72,29 @@ nav {
     margin-bottom: 0;
     list-style: none;
     /*background-color: rgba(2, 14, 28, 0.5);*/
-    height: 6.25rem;
+    /*height: 6.25rem;*/
 }
 
-#navbar.navbar-shrink {
+#navbar {
     /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
     background-color: rgba(255, 255, 255, 5%);
 }
 
+#navbar.navbar-shrink {
+    /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
+    /*background-color: rgba(255, 255, 255, 5%);*/
+    background-color: #1E2235;
+}
+
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 163, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    color: yellow;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /*color: yellow;*/
 }
 
 .navbar-dark .navbar-toggler {
     border-color: transparent;
     color: transparent;
+    padding: 0;
 }
 
 .nav-link {
@@ -107,9 +114,10 @@ a.dropdown-item {
 }
 
 section#hero {
-    background-image: url("../images/bg-hero.png");
+    background-image: url("../images/bg-hero-1920.png");
     background-size: cover;
     /*transform: translateY(1rem);*/
+    /*height: 90vw;*/
 }
 
 section#hero .hero-img {
@@ -119,401 +127,300 @@ section#hero .hero-img {
     transform: translate(-50%, 5%);
 }
 
-.intro-title {
-    /*font-family: "Monument Extended", serif;*/
-    font-family: "Monument Extended", sans-serif;
-    font-style: normal;
-    color: #FFFFFF;
-    /*font-weight: 800;*/
-    font-size: 3.375rem;
-    line-height: 65px;
+
+.p-outline {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
-.intro-title p {
-    /*font-family: "Monument Extended Bold", sans-serif;*/
-    font-weight: 800;
-
+section#features .container {
+    /*background: url("../images/bg-features.png");*/
+    /*background-size: cover;*/
 }
 
 @media screen and (max-width: 575px) {
-    /*html, body {*/
-    /*    overflow-x: hidden;*/
-    /*}*/
-    header.masthead {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        max-width: 100%;
-        height: 100vh;
+    section#hero {
+        height: 90vw;
     }
 
-    header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*bottom: 0;*/
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+    section#hero .hero-img {
+        /*left: 1000px;*/
+        /*top: 800px;*/
+        /*top: 10vw;*/
+        width: 85vw;
+        transform: translate(-50%, 5%);
     }
 
-    header.masthead > div > div > p {
-        font-family: "Exton Free Trial", monospace;
-        /*font-size: 4rem;*/
-        font-size: 150%;
+    .badge-icon {
+        display: none;
     }
 
-    header.masthead .header-title {
-        top: 22rem;
-        /*left: 1rem;*/
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header #playnow {
-        width: 8em;
-    }
-
-    section.page-section div.button-section {
-        width: auto;
-        height: 1.5rem;
-        align-self: center;
-    }
-
-    section#faq span.faq1 {
-        width: 100%;
-    }
-
-    section#faq div.white-ruler {
-        width: 0;
-    }
-
-    .carousel-inner {
-        width: 100%;
-    }
-
-    section.page-section#features .subtitle {
-        font-family: Montserrat, sans-serif;
+    .intro-title {
+        /*font-family: "Monument Extended", serif;*/
+        font-family: "Monument Extended", sans-serif;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 800;*/
         font-size: 1.5rem;
-        font-weight: bold;
+        line-height: 28.8px;
     }
 
-    section.page-section#features .content {
-        font-family: Montserrat, sans-serif;
-        font-size: 0.75rem;
+    .intro-title p {
+        /*font-family: "Monument Extended Bold", sans-serif;*/
+        font-weight: 800;
+
     }
 
-    .char-title {
-        font-family: Montserrat, sans-serif;
+    .intro-desc {
+        /*font-family: "Monument Extended", sans-serif;*/
+        width: 34.75rem;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 400;*/
+        font-size: 1.25rem;
+        line-height: 20px;
+    }
+
+    .intro-desc p {
+        font-weight: 400;
+    }
+
+    .mockup-intro {
+        /*height: auto;*/
+        /*z-index: -1;*/
+        /*top: -800px;*/
+    }
+
+    section#features {
+        /*margin-top: -2.5rem;*/
+        background: url("../images/bg-features.png");
+        background-size: 98vw 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .features-title {
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 800;
         font-size: 1.5rem;
-        font-weight: bold;
-        letter-spacing: 2px;
+        line-height: 29px;
     }
 
-    .char-desc {
-        font-family: Montserrat, sans-serif;
-        font-size: 0.75rem;
-        text-indent: 18px;
+    .features-desc {
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 20px;
     }
 
-    .carousel .charbox {
-        width: 6.225rem;
-        height: 1.6rem;
-        background-color: #9685f2;
-        border-radius: 2px;
-    }
-
-    button.btn {
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 0.75rem;
-        text-underline: none;
-        letter-spacing: 1px;
-        box-shadow: yellow;
-    }
-
-    section#faq span.faq {
-        font-family: Montserrat, sans-serif;
+    .features-social-fi {
+        font-family: 'Readex Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: 1rem;
-        font-weight: bold;
+        line-height: 24px;
+        /* or 150% */
+        letter-spacing: 0.5px;
     }
 
-    section#faq i.faq-arrow {
-        font-size: 1.5rem;
+    .features-text-icon {
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 22px;
+        color: #FFFFFF;
     }
 
-    section#faq div.faq-question {
-        font-family: Montserrat, sans-serif;
-        font-size: 0.625rem;
-        font-weight: bold;
-    }
-
-    section#faq div.faq-content {
-        font-family: "Segoe UI", sans-serif;
-        font-size: 0.625rem;
-        line-height: 13.5px;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 16px;
-    }
 }
 
 /*Medium display 576px - 767px*/
 @media screen and (min-width: 576px) {
-
-    .nav-link {
-        /*font-size: 1rem;*/
+    section#hero {
+        height: 90vw;
     }
 
-    a.dropdown-item {
-        font-size: 1.125rem;
+    section#hero .hero-img {
+        /*left: 1000px;*/
+        /*top: 800px;*/
+        /*top: 10vw;*/
+        width: 85vw;
+        transform: translate(-50%, 5%);
     }
 
-    header.masthead {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        max-width: 100%;
-        height: 100vh;
-    }
-
-    header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*bottom: 0;*/
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    header.masthead .header-title {
-        /*top: 22rem;*/
-        top: 40%;
-        /*left: 1rem;*/
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header #playnow {
-        width: 16em;
-    }
-
-    section#faq span {
-        /*white-space: nowrap;*/
-    }
-
-    section#faq span.faq1 {
-        width: 100%;
-    }
-
-    section#faq div.white-ruler {
-        /*width: 100%;*/
-        width: auto;
-    }
-
-    .carousel-inner {
-        width: 100%;
-    }
-
-    section.page-section#features .subtitle {
-        font-family: Montserrat, sans-serif;
+    .intro-title {
+        /*font-family: "Monument Extended", serif;*/
+        font-family: "Monument Extended", sans-serif;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 800;*/
         font-size: 1.5rem;
-        font-weight: bold;
+        line-height: 28.8px;
     }
 
-    section.page-section#features .content {
-        font-family: Montserrat, sans-serif;
-        font-size: 0.75rem;
+    .intro-title p {
+        /*font-family: "Monument Extended Bold", sans-serif;*/
+        font-weight: 800;
+
     }
 
-    .carousel .charbox {
-        width: 9.375rem;
-        height: 2.3rem;
-        background-color: #9685f2;
-        border-radius: 2px;
-    }
-
-    button.btn {
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        color: white;
-        font-size: 1.125rem;
-        text-underline: none;
-        letter-spacing: 1px;
-    }
-
-    section#faq span.faq {
-        font-family: Montserrat, sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    section#faq i.faq-arrow {
-        font-size: 2.25rem;
-    }
-
-    section#faq div.faq-question {
-        font-family: Montserrat, sans-serif;
-        font-size: 0.9375rem;
-        font-weight: bold;
-    }
-
-    section#faq div.faq-content {
-        font-family: "Segoe UI", sans-serif;
-        font-size: 0.9375rem;
+    .intro-desc {
+        /*font-family: "Monument Extended", sans-serif;*/
+        width: 34.75rem;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 400;*/
+        font-size: 1.25rem;
         line-height: 20px;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 16px;
     }
+
+    .intro-desc p {
+        font-weight: 400;
+    }
+
+    section#features {
+        /*margin-top: -2.5rem;*/
+        background: url("../images/bg-features.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .features-title {
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+
+    .features-desc {
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+
+    .features-social-fi {
+        font-family: 'Readex Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        /* or 150% */
+        letter-spacing: 0.5px;
+    }
+
+    .features-text-icon {
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
-    header.masthead > div > div > p {
-        font-family: "Exton Free Trial", monospace;
-        font-size: 5rem;
+    section#hero {
+        height: 75vw;
     }
 
-    header.masthead {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        max-width: 100%;
-        height: 100vh;
+
+    section#hero .hero-img {
+        /*position: relative;*/
+        /*left: 1000px;*/
+        /*top: 800px;*/
+        /*top: 10vw;*/
+        /*top: 50%;*/
+        /*left: -50%;*/
+        width: 70vw;
+        /*transform: translate(-50%, 5%);*/
     }
 
-    header.masthead .header-title {
-        /*bottom: 2rem;*/
-        /*left: 1rem;*/
-        /*top: 40rem;*/
-        top: 55%;
-        /*left: 8rem;*/
-        left: 10%;
-        /*left: 0;*/
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+    .intro-title {
+        /*font-family: "Monument Extended", serif;*/
+        font-family: "Monument Extended", sans-serif;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 800;*/
+        font-size: 3.375rem;
+        line-height: 65px;
     }
 
-    header #playnow {
-        width: 19em;
+    .intro-title p {
+        /*font-family: "Monument Extended Bold", sans-serif;*/
+        font-weight: 800;
+
     }
 
-    header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    section#faq span {
-        white-space: nowrap;
-    }
-
-    section#faq span.faq1 {
-        width: auto;
-    }
-
-    section#faq div.white-ruler {
-        width: 100%;
-        /*width: auto;*/
-    }
-
-    .carousel-inner {
-        width: 70%;
-    }
-
-    section.page-section#features .subtitle {
-        font-family: Montserrat, sans-serif;
-        font-size: 2.25rem;
-        font-weight: bold;
-    }
-
-    section.page-section#features .content {
-        font-family: Montserrat, sans-serif;
-        font-size: 1.125rem;
-    }
-
-    .char-title {
-        font-family: Montserrat, sans-serif;
-        font-size: 2rem;
-        font-weight: bold;
-        letter-spacing: 4px;
-    }
-
-    .char-desc {
-        font-family: Montserrat, sans-serif;
+    .intro-desc {
+        /*font-family: "Monument Extended", sans-serif;*/
+        width: 34.75rem;
+        font-style: normal;
+        color: #FFFFFF;
+        /*font-weight: 400;*/
         font-size: 1rem;
-        text-indent: 24px;
+        line-height: 24px;
     }
 
-    .carousel .charbox {
-        width: 12.5rem;
-        height: 3.125rem;
-        background-color: #9685f2;
-        border-radius: 2px;
+    .intro-desc p {
+        font-weight: 400;
     }
 
+    .mockup-intro {
+        position: relative;
+        /*background-color: white;*/
+        height: auto;
+        z-index: -1;
+        /*top: -800px;*/
+        left: 200px;
+        bottom: 200px;
+    }
 
-    button.btn {
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        color: white;
+    section#features {
+        margin-top: -30rem;
+        background: url("../images/bg-features.png");
+        /*background-size: 85rem auto ;*/
+        background-size: 95vw auto;
+        background-repeat: no-repeat;
+        background-position-x: center;
+
+    }
+
+    .features-title {
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 800;
+        font-size: 1.75rem;
+        line-height: 29px;
+    }
+
+    .features-desc {
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .features-social-fi {
+        width: 88%;
+        font-family: 'Readex Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 24px;
+        /* or 150% */
+        letter-spacing: 0.5px;
+    }
+
+    .features-text-icon {
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: 1.5rem;
-        text-underline: none;
-        letter-spacing: 2px;
-    }
-
-    section#faq span.faq {
-        font-family: Montserrat, sans-serif;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    section#faq i.faq-arrow {
-        font-size: 3rem;
-    }
-
-    section#faq div.faq-question {
-        font-family: Montserrat, sans-serif;
-        font-size: 1.25rem;
-        font-weight: bold;
-    }
-
-    section#faq div.faq-content {
-        font-family: "Segoe UI", sans-serif;
-        font-size: 1.25rem;
-        line-height: 27px;
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
     }
 }
 
@@ -562,178 +469,6 @@ section#overview div.container {
     max-width: 1560px;
 }
 
-section.page-section#overview {
-    background-image: url("../images/overview-background.png");
-    background-color: rgba(0, 0, 255, 0.1);
-    /*opacity: 40%;*/
-    background-size: cover;
-}
-
-section.page-section#overview p.what-is {
-    font-family: "Lato Black", sans-serif;
-    font-size: 1rem;
-    font-weight: 200;
-    letter-spacing: 0.1em;
-}
-
-section.page-section#overview p.why-chronofi {
-    font-family: "Lato Black", sans-serif;
-    font-size: 18px;
-    /*letter-spacing: 2em;*/
-}
-
-section.page-section#overview p {
-    font-family: "Lato Black", sans-serif;
-    font-size: 20px;
-}
-
-section.page-section#features {
-    background-image: url("../images/background-gamemodes.png");
-    background-color: rgba(0, 0, 255, 0.1);
-    /*opacity: 40%;*/
-    background-size: cover;
-}
-
-/*Characters Carousel*/
-.carousel /*slider */
-{
-    position: relative;
-}
-
-.carousel .carousel-item {
-    transition: none;
-    /*position: relative;*/
-}
-
-.carousel .carousel-indicators /* indicator wrapper*/
-{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-    left: 0;
-    right: 0;
-    display: flex; /* this is for indicators  */
-}
-
-.carousel-indicators [data-bs-target] {
-    text-indent: 0;
-}
-
-#headcarousel_container .carousel-indicators li /* indicators*/
-{
-    flex-grow: 1; /* make all indicator li similarly stretched */
-    height: 40px;
-    border-radius: 2px;
-}
-
-#charscarousel .carousel-indicators button.active {
-    /*background-color: rgba(251, 222, 87, 0.5); !* changes indicators color when it is active*!*/
-    background-color: #4A3071;
-}
-
-.carousel .carousel-inner .carousel-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.carousel .charbox:hover {
-    background-color: #B687FF;
-    border-radius: 2px;
-}
-
-button.btn:hover {
-    color: white;
-    text-underline: none;
-}
-
-.btn-check:focus + .btn, .btn:focus {
-    box-shadow: none;
-}
-
-.carousel .carousel-inner .carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-/*Characters Carousel end*/
-
-section.page-section#roadmap {
-    background-image: url("../images/background-roadmap.png");
-    background-color: rgba(0, 0, 255, 0.1);
-    /*opacity: 40%;*/
-    background-size: cover;
-}
-
-#svg-roadmap {
-    margin: 0 auto;
-}
-
-section#features div.inner {
-    top: 0;
-}
-
-section#features div.inner img {
-    top: -50%;
-}
-
-section#features img.text-box {
-    /*width: 315px;*/
-    /*height: 325px;*/
-    /*object-fit: none;*/
-}
-
-section#features div img.spin {
-    animation: spin 0.75s infinite linear;
-}
-
-.text-team {
-    font-family: Montserrat, sans-serif;
-    color: #97D4FC;
-}
-
-.text-team .text-team-0 {
-    font-size: 1.75rem;
-    font-weight: bolder;
-}
-
-.text-team .text-team-1 {
-    font-size: 1.5rem;
-}
-
-#teaser {
-    width: 1040px;
-    height: auto;
-}
-
-.chronofitext {
-    color: #FDA31E;
-}
-
-figure {
-    position: relative
-}
-
-figcaption {
-    position: absolute;
-    /*width: 200px;*/
-    line-height: 150px;
-    text-align: center;
-    left: 150px;
-    top: -25px;
-    /*text-shadow: 0 0 1px white;*/
-    font-size: 24px;
-    /*font-weight:bold;*/
-}
-
-.container-image {
-    border: solid red 2px;
-    width: 1090px;
-    height: auto;
-    align-self: center;
-    place-content: center;
-}
 
 .full-width-image {
     width: 100vw;
@@ -745,117 +480,6 @@ figcaption {
 .full-width-image img {
     width: 100%;
 }
-
-section#advisor div.advisor {
-    width: 12.5em;
-}
-
-section#faq {
-    background-image: url("../images/background-faq.png");
-    background-color: rgba(0, 0, 255, 0.1);
-    /*background-size: cover;*/
-    background-size: auto;
-}
-
-section#contact p {
-    font-family: Iceland, sans-serif;
-    font-size: 2.375rem;
-}
-
-.accordion-header {
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 16px;
-    padding: 0;
-    /*height: auto;*/
-}
-
-.accordion-button {
-    /*width: 20%;*/
-    width: auto;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
-.accordion-button:not(.collapsed):after {
-    background-image: url("../images/caret-down-solid-white.svg");
-    margin-left: 2rem;
-    height: 2rem;
-    transform: none;
-    padding: 0;
-}
-
-.accordion-button.collapsed:after {
-    background-image: url("../images/caret-right-solid-white.svg");
-    margin-left: 2rem;
-    height: 2rem;
-    padding: 0;
-}
-
-footer#footer div.container-fluid {
-    max-width: 80em;
-}
-
-#logo {
-    margin-top: 25px;
-    margin-left: 140px;
-    margin-bottom: 25px;
-    float: left;
-}
-
-footer#footer div.logo {
-    width: 10.5em;
-}
-
-footer#footer {
-    background-image: linear-gradient(#010911, #05172d);
-}
-
-#footer p {
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    /*line-height: ;*/
-}
-
-footer div.coming-soon {
-    background-color: #002550;
-}
-
-footer div.coming-soon p.coming-soon-title {
-    font-family: "Voice Activated BB", sans-serif;
-    font-size: 20px;
-    color: white;
-}
-
-footer div.coming-soon p.coming-soon-content {
-    font-family: "Voice Activated BB", sans-serif;
-    font-size: 12px;
-    color: white;
-}
-
-footer div.coming-soon div#invest {
-    background-color: #001834;
-    font-family: "Voice Activated BB", sans-serif;
-    font-size: 12px;
-    color: white;
-}
-
-.copyright {
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
-    /*background-color: black;*/
-    height: 71px;
-}
-
-.copyright p {
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 1.25rem;
-}
-
-/*a.icon:hover {*/
-/*    background-color: #FDA31E;*/
-/*}*/
 
 a.socmed-icon:hover {
     transform: scale(1.1);
