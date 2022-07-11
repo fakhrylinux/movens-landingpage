@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="assets/favicon.ico">
@@ -22,6 +22,7 @@
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
     <!--          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="-->
     <!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
+
 
     <title>MOVENS</title>
 </head>
@@ -105,6 +106,20 @@
 <section id="introduction">
     <div class="container">
         <div style="margin-top: -5rem;">
+            <div class="mb-5 position-relative ">
+
+                <button class="play-btn position-absolute top-50 start-50 translate-middle active" style="z-index: 1">
+                    Play
+                </button>
+
+                <!--                <div class="active play-btn position-absolute top-50 start-50 translate-middle">-->
+                <!--                    <img src="assets/images/btn_play.svg" alt="Play Button">-->
+                <!--                </div>-->
+                <video id="trailer" preload="auto">
+                    <source src="assets/video/MOVENS_x264_001.mp4" type="video/mp4">
+                    <!--                    <source src="https://static.videezy.com/system/resources/previews/000/002/719/original/cloudy-sunset.mp4">-->
+                </video>
+            </div>
             <div class="my-4">
                 <img src="assets/images/title-introduction.png" alt="">
                 <img src="assets/images/ic_introduction.png" alt="">
@@ -266,13 +281,13 @@
 </section>
 
 
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
-<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
-<!--        crossorigin="anonymous"></script>-->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!--<script src="assets/js/bootstrap.bundle.min.js"></script>-->
 
-<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"-->
-<!--        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <!--Active class on click-->
 <script>
@@ -282,6 +297,25 @@
   })
 </script>
 
+<script>$(document).ready(function () {
+  const ctrlVideo = document.getElementById('trailer')
+  $('button').click(function () {
+    // console.log("Play button clicked")
+    if ($('button').hasClass('active')) {
+      console.log("Try plaing")
+      ctrlVideo.play()
+      $('button').html('Pause')
+      $('button').toggleClass('active')
+    } else {
+      console.log("Try pause")
+      ctrlVideo.pause()
+      $('button').html('Play')
+      $('button').toggleClass('active')
+    }
+  })
+})
+
+</script>
 
 </body>
 </html>
