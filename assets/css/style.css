@@ -43,6 +43,10 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 1110px;
+}
+
 h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
@@ -234,6 +238,24 @@ section#features .container {
         color: #FFFFFF;
     }
 
+    .desktop-image {
+        display: none;
+    }
+
+    footer h1 {
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.25rem;
+        line-height: 43px;
+        color: #FFFFFF;
+    }
+
+    footer h1 span.h1-outline {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
 }
 
 /*Medium display 576px - 767px*/
@@ -320,6 +342,9 @@ section#features .container {
         color: #FFFFFF;
     }
 
+    .desktop-image {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -422,6 +447,43 @@ section#features .container {
         line-height: 22px;
         color: #FFFFFF;
     }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .desktop-image {
+        display: block;
+    }
+
+    section#partnership {
+        margin-bottom: 30rem;
+    }
+
+    footer h1 {
+        /*width: 45vw;*/
+        width: 49rem;
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 77px;
+        color: #FFFFFF;
+    }
+
+    footer h1 span.h1-outline {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+
+    .footer-mockup {
+        position: relative;
+        /*top: 190%;*/
+        bottom: 600px;
+        left: 44%;
+        /*transform: translate(-50%, -50%);*/
+    }
 }
 
 
@@ -454,7 +516,7 @@ header.masthead h1, header.masthead .h1 {
     /*font-size: 2.25rem;*/
 }
 
-video   {
+video {
     /*position: relative;*/
     z-index: -1;
     -webkit-transition: all 1s;
@@ -479,26 +541,276 @@ video   {
 /*    transform: translate(-50%, -50%);*/
 /*}*/
 
-
-section.page-section {
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
-}
-
-section#overview div.container {
-    max-width: 1560px;
+section#roadmap {
+    background: url("../images/bg-roadmap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-.full-width-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-}
-
-.full-width-image img {
+/*Roadmap*/
+.btn-grp {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-grp .left {
+    left: 10px;
+}
+
+.btn-grp .right {
+    right: 10px;
+}
+
+.btn-grp .left, .btn-grp .right {
+    position: absolute;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-events {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.timeline-events li {
+    position: relative;
+    display: inline-block;
+}
+
+.timeline-events li:before {
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    height: 8px;
+    border-radius: 8px;
+    content: "";
+}
+
+.timeline-events li:first-child {
+    bottom: 0;
+}
+
+.timeline-event-years-4-5, .timeline-event-years-4-5:before {
+    width: 450px;
+}
+
+@media (max-width: 1149px) {
+    .timeline-event-years-4-5, .timeline-event-years-4-5:before {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1363px) {
+    .timeline-event-years-4-5, .timeline-event-years-4-5:before {
+        width: 250px;
+    }
+}
+
+.timeline-event-legend {
+    position: relative;
+}
+
+.timeline-event-legend > i {
+    bottom: -32px;
+    right: -12px;
+}
+
+.timeline-event-legend > i:after {
+    left: -4px;
+    bottom: -12px;
+}
+
+.timeline-event-legend i, .timeline-event-legend i:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.timeline-event-legend i:after {
+    content: "";
+}
+
+.timeline-events li:first-child:before {
+    background: #ff4aab;
+    /*background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmMGYwZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MyZTM0ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");*/
+    background-size: 100%;
+    background-image: linear-gradient(90deg, #1E2235 0, #ff4aab);
+    border-radius: 0 6px 6px 0;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/*.ezcwRl svg {*/
+/*    height: 22px;*/
+/*    color: white;*/
+/*    fill: white;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+/*}*/
+
+/*audio, canvas, embed, iframe, img, object, svg, video {*/
+/*    display: block;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+.timeline-events h2 {
+    font-family: "Readex Pro", serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #ff4aab;
+    font-size: 1.375rem;
+    /*line-height: 28px;*/
+    margin-bottom: 1.5rem;
+}
+
+.timeline-events h3 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 15px;
+    /* or 143% */
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-event-years-2, .timeline-event-years-2:before {
+    width: 200px;
+}
+
+/*.timeline-events h2, .timeline-events h3, .timeline-events h4 {*/
+/*    margin: 0 0 1px;*/
+/*    font-weight: 400;*/
+/*    font-size: 11px;*/
+/*}*/
+
+/*Phase 1*/
+.timeline-events li:nth-child(2) {
+    bottom: 16px;
+}
+
+.timeline-events li:nth-child(2):before {
+    background: #ff4aab;
+}
+
+/*Phase 2*/
+.timeline-events li:nth-child(3) {
+    bottom: 32px;
+}
+
+.timeline-events li:nth-child(3):before {
+    background: #ff4aab;
+}
+
+/*Phase 3*/
+.timeline-events li:nth-child(4) {
+    bottom: 48px;
+}
+
+.timeline-event-years-2-5, .timeline-event-years-2-5:before {
+    width: 250px;
+}
+
+.timeline-events li:nth-child(4):before {
+    background: #ff4aab;
+}
+
+.timeline-event-years-2-5, .timeline-event-years-2-5:before {
+    width: 250px;
+}
+
+/*Phase 4*/
+.timeline-events li:nth-child(5) {
+    bottom: 64px;
+}
+
+.timeline-event-years-7, .timeline-event-years-7:before {
+    width: 700px;
+}
+
+.timeline-events li:nth-child(5):before {
+    background: #ff4aab;
+    background-size: 100%;
+    background-image: linear-gradient(90deg, #ff4aab 0, #1E2235);
+    border-radius: 6px 0 0 6px;
+}
+
+@media (max-width: 1149px) {
+    .timelines-years {
+        left: -410px;
+    }
+}
+
+@media (max-width: 1363px) {
+    .timelines-years {
+        left: -200px;
+    }
+}
+
+.timelines-years {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 0 200px;
+    margin: 0;
+    white-space: nowrap;
+    border-top: 1px solid #282828;
+    list-style: none;
+    font-size: 0;
+}
+
+.timelines-years li {
+    position: relative;
+    top: -6px;
+    display: inline-block;
+    width: 200px;
+    color: #868686;
+    font-size: 11px;
+    line-height: 11px;
+    text-indent: -12px;
+}
+
+/*Roadmap End*/
+footer {
+    background: url("../images/bg-footer.png");
+    background-size: cover;
+}
+
+/*footer h1 {*/
+/*    font-family: 'Monument Extended', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 800;*/
+/*    font-size: 2.25rem;*/
+/*    line-height: 43px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+footer h1 span.h1-outline {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 a.socmed-icon:hover {
