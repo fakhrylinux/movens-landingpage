@@ -160,6 +160,10 @@ section#features .container {
         display: none;
     }
 
+    .container-intro {
+        margin-top: -1rem;
+    }
+
     .intro-title {
         /*font-family: "Monument Extended", serif;*/
         font-family: "Monument Extended", sans-serif;
@@ -242,7 +246,19 @@ section#features .container {
         display: none;
     }
 
-    footer h1 {
+    .btn-grp {
+        display: block;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .slider {
+        /*left: -190px !important;*/
+    }
+
+    section#mockup h1 {
         font-family: 'Monument Extended', sans-serif;
         font-style: normal;
         font-weight: 800;
@@ -251,7 +267,7 @@ section#features .container {
         color: #FFFFFF;
     }
 
-    footer h1 span.h1-outline {
+    section#mockup h1 span.h1-outline {
         -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
@@ -270,6 +286,10 @@ section#features .container {
         /*top: 10vw;*/
         width: 85vw;
         transform: translate(-50%, 5%);
+    }
+
+    .container-intro {
+        margin-top: -3rem;
     }
 
     .intro-title {
@@ -345,6 +365,31 @@ section#features .container {
     .desktop-image {
         display: none;
     }
+
+    .btn-grp {
+        display: block;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    section#mockup h1 {
+        /*width: 45vw;*/
+        width: 49rem;
+        font-family: 'Monument Extended', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 77px;
+        color: #FFFFFF;
+    }
+
+    section#mockup h1 span.h1-outline {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -362,6 +407,10 @@ section#features .container {
         /*left: -50%;*/
         width: 70vw;
         /*transform: translate(-50%, 5%);*/
+    }
+
+    .container-intro {
+        margin-top: -5rem;
     }
 
     .intro-title {
@@ -392,6 +441,10 @@ section#features .container {
 
     .intro-desc p {
         font-weight: 400;
+    }
+
+    .slider {
+        left: 0 !important;
     }
 
     .mockup-intro {
@@ -456,11 +509,15 @@ section#features .container {
         display: block;
     }
 
+    .hidden {
+        display: none;
+    }
+
     section#partnership {
         margin-bottom: 30rem;
     }
 
-    footer h1 {
+    section#mockup h1 {
         /*width: 45vw;*/
         width: 49rem;
         font-family: 'Monument Extended', sans-serif;
@@ -471,18 +528,25 @@ section#features .container {
         color: #FFFFFF;
     }
 
-    footer h1 span.h1-outline {
+    section#mockup h1 span.h1-outline {
         -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
     }
 
     .footer-mockup {
-        position: relative;
+        /*position: relative;*/
         /*top: 190%;*/
         bottom: 600px;
         left: 44%;
         /*transform: translate(-50%, -50%);*/
+        /*margin-bottom: -1500px;*/
+        margin-top: -550px;
+        margin-left: 40%;
+    }
+
+    .footer {
+        margin-top: -100px;
     }
 }
 
@@ -557,10 +621,6 @@ section#roadmap {
     z-index: 100;
 }
 
-.hidden {
-    display: none;
-}
-
 .btn-grp .left {
     left: 10px;
 }
@@ -576,7 +636,7 @@ section#roadmap {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #333;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -793,7 +853,7 @@ section#roadmap {
 }
 
 /*Roadmap End*/
-footer {
+section#mockup {
     background: url("../images/bg-footer.png");
     background-size: cover;
 }
@@ -807,7 +867,7 @@ footer {
 /*    color: #FFFFFF;*/
 /*}*/
 
-footer h1 span.h1-outline {
+section#mockup h1 span.h1-outline {
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;

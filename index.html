@@ -105,7 +105,7 @@
 
 <section id="introduction">
     <div class="container">
-        <div style="margin-top: -5rem;">
+        <div class="container-intro">
             <div class="mb-5 position-relative ">
 
                 <!--                <button class="play-btn position-absolute top-50 start-50 translate-middle active" style="z-index: 1">-->
@@ -330,40 +330,59 @@
     </div>
 
     <div class="container-fluid">
-        <div class="mx-0">
+        <div class="mx-0 overflow-hidden">
             <!-- Roadmap -->
             <div class="position-relative">
                 <div class="btn-grp hidden ">
-                    <button class="left"><span height="22px" width="15" color="white" rotate="0"
-                                               class="sc-bczRLJ ezcwRl"><svg class=""
-                                                                             xmlns="http://www.w3.org/2000/svg"
-                                                                             viewBox="0 0 512 512"><path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="48"
-                            d="M244 400L100 256l144-144M120 256h292"></path></svg></span>
+                    <button class="arrow left">
+                        <!--                        <span height="22px" width="15" color="white" rotate="0"-->
+                        <!--                              class="sc-bczRLJ ezcwRl">-->
+                        <!--                            <svg class=""-->
+                        <!--                                 xmlns="http://www.w3.org/2000/svg"-->
+                        <!--                                 viewBox="0 0 512 512"><path-->
+                        <!--                                    fill="none"-->
+                        <!--                                    stroke="currentColor"-->
+                        <!--                                    stroke-linecap="round"-->
+                        <!--                                    stroke-linejoin="round"-->
+                        <!--                                    stroke-width="48"-->
+                        <!--                                    d="M244 400L100 256l144-144M120 256h292"></path>-->
+                        <!--                            </svg>-->
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
+                        <!--                        </span>-->
                     </button>
-                    <button class="right"><span height="22px" width="15" color="white" rotate="0"
-                                                class="sc-bczRLJ ezcwRl"><svg class=""
-                                                                              xmlns="http://www.w3.org/2000/svg"
-                                                                              viewBox="0 0 512 512"><path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="48"
-                            d="M268 112l144 144-144 144M392 256H100"></path></svg></span>
+                    <button class="arrow right">
+<!--                        <span height="22px" width="15" color="white" rotate="0"-->
+<!--                              class="sc-bczRLJ ezcwRl">-->
+<!--                            <svg class=""-->
+                            <!--                                 xmlns="http://www.w3.org/2000/svg"-->
+                            <!--                                 viewBox="0 0 512 512">-->
+                            <!--                                <path-->
+                            <!--                                        fill="none"-->
+                            <!--                                        stroke="currentColor"-->
+                            <!--                                        stroke-linecap="round"-->
+                            <!--                                        stroke-linejoin="round"-->
+                            <!--                                        stroke-width="48"-->
+                            <!--                                        d="M268 112l144 144-144 144M392 256H100">-->
+
+                            <!--                                </path>-->
+                            <!--                            </svg>-->
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="32" height="32"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                                <g transform="rotate(180 8 8)">
+                                    <path
+                                            fill="currentColor" fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></g>
+                            </svg>
+<!--                        </span>-->
                     </button>
                 </div>
-                <div class="position-relative w-100"
-                     style="transition: all 1s ease 0s; height: 250px; left: 0px;">
-                    <ul class="timeline-events" style="border: 1px solid greenyellow">
+                <div class="position-relative w-100 slider"
+                     style="transition: all 1s ease 0s; height: 400px; left: 0px;">
+                    <ul class="timeline-events">
                         <li class="timeline-event-years-4-5 timeline-event-legend">
 
                         </li>
-                        <li class="timeline-event-years-2 text-wrap">
+                        <li class="timeline-event-years-2 text-wrap mt-5 mx-2">
                             <h2>Phase 1</h2>
                             <h3>KYC Verification with GemPad Team</h3>
                             <h3>Website Release</h3>
@@ -375,7 +394,7 @@
                             <h3>MOVENS DEX Listing</h3>
                             <h3>Staking Launch</h3>
                         </li>
-                        <li class="timeline-event-years-2 text-wrap">
+                        <li class="timeline-event-years-2 text-wrap mt-5 mx-2">
                             <h2>Phase 2</h2>
                             <h3>MOVENS NFTs Beta Launch</h3>
                             <h3>MOVENS App Beta Testing</h3>
@@ -387,7 +406,7 @@
                             <h3>Achievement system</h3>
                             <h3>MOVENS Merchandise</h3>
                         </li>
-                        <li class="timeline-event-years-2-5 text-wrap">
+                        <li class="timeline-event-years-2-5 text-wrap mt-5 mx-2">
                             <h2>Phase 3</h2>
                             <h3>Multi-Chain Wallet</h3>
                             <h3>SocialFi Beta Testing</h3>
@@ -395,14 +414,21 @@
                             <h3>Competition Mode</h3>
                             <h3>Battle Mode</h3>
                             <h3>Bridge to Polygon/Solana</h3>
+                            <h3><br></h3>
+                            <h3><br></h3>
+                            <h3><br></h3>
                         </li>
-                        <li class="timeline-event-years-7 text-wrap">
+                        <li class="timeline-event-years-7 text-wrap mt-5 mx-2">
                             <h2>Phase 4</h2>
                             <h3>SocialFi Release</h3>
                             <h3>World Tournament</h3>
                             <h3>Clan Release</h3>
                             <h3>Team Mode Release</h3>
                             <h3>More to Come!</h3>
+                            <h3><br></h3>
+                            <h3><br></h3>
+                            <h3><br></h3>
+                            <h3><br></h3>
                         </li>
                     </ul>
                 </div>
@@ -433,67 +459,76 @@
     </div>
 </section>
 
-<footer>
+<section id="mockup">
     <div class="container">
         <h1 class="position-relative" style="top: -4rem">
             <span class="h1-outline">GET READY,</span> <br>
             THE MOVEMENT'S MOVING! <span class="h1-outline">ARE YOU</span>?
         </h1>
 
-        <div class="d-inline-flex mb-4 me-2 footer-mockup">
+        <div class="d-inline-flex mb-4 mb-lg-0 me-2 footer-mockup">
             <img src="assets/images/mockup-footer.png" alt="">
         </div>
 
-        <p class="text-white">Download Now!</p>
-        <div class="d-inline-block d-lg-inline-flex mx-auto p-1">
-            <img src="assets/images/google-play-badge.png" alt="Google Play">
-        </div>
-        <div class="d-inline-block d-lg-inline-flex mx-auto p-1">
-            <img src="assets/images/app-store-badge.png" alt="Google Play">
-        </div>
-
-        <div class="mt-5">
-            <div class="d-flex mx-auto justify-content-evenly justify-content-lg-center">
-                <div class="d-inline-flex px-2">
-                    <span class="iconify text-white" data-icon="tabler:brand-discord" style="font-size: 36px;"></span>
-                </div>
-                <div class="d-inline-flex px-2">
-                    <span class="iconify text-white" data-icon="tabler:brand-telegram" style="font-size: 36px;"></span>
-                </div>
-                <div class="d-inline-flex px-2">
-                    <span class="iconify text-white" data-icon="tabler:brand-twitter" style="font-size: 36px;"></span>
-                </div>
-                <div class="d-inline-flex px-2">
-                    <span class="iconify text-white" data-icon="tabler:brand-instagram" style="font-size: 36px;"></span>
-                </div>
-                <div class="d-inline-flex px-2">
-                    <span class="iconify text-white" data-icon="tabler:brand-medium" style="font-size: 36px;"></span>
-                </div>
+        <div class="footer">
+            <p class="text-white">Download Now!</p>
+            <div class="d-inline-block d-lg-inline-flex mx-auto p-1">
+                <img src="assets/images/google-play-badge.png" alt="Google Play">
+            </div>
+            <div class="d-inline-block d-lg-inline-flex mx-auto p-1">
+                <img src="assets/images/app-store-badge.png" alt="Google Play">
             </div>
 
-            <div class="d-flex flex-column flex-lg-row mx-auto justify-content-center mt-4 align-items-center">
-
-                <div class="d-flex  my-1 px-4">
-                    <p class="text-white">
-                        <span class="iconify" data-icon="tabler:mail" style="font-size: 24px;"></span>
-                        hello@movens.app
-                    </p>
+            <div class="mt-5">
+                <div class="d-flex mx-auto justify-content-evenly justify-content-lg-center">
+                    <div class="d-inline-flex px-2">
+                        <span class="iconify text-white" data-icon="tabler:brand-discord"
+                              style="font-size: 36px;"></span>
+                    </div>
+                    <div class="d-inline-flex px-2">
+                        <span class="iconify text-white" data-icon="tabler:brand-telegram"
+                              style="font-size: 36px;"></span>
+                    </div>
+                    <div class="d-inline-flex px-2">
+                        <span class="iconify text-white" data-icon="tabler:brand-twitter"
+                              style="font-size: 36px;"></span>
+                    </div>
+                    <div class="d-inline-flex px-2">
+                        <span class="iconify text-white" data-icon="tabler:brand-instagram"
+                              style="font-size: 36px;"></span>
+                    </div>
+                    <div class="d-inline-flex px-2">
+                        <span class="iconify text-white" data-icon="tabler:brand-medium"
+                              style="font-size: 36px;"></span>
+                    </div>
                 </div>
 
-                <div class="d-flex  my-1 px-4">
-                    <p class="text-white">
-                        <span class="iconify" data-icon="tabler:cloud-download" style="font-size: 24px;"></span>
-                        Download Media Kit
-                    </p>
-                </div>
+                <div class="d-flex flex-column flex-lg-row mx-auto justify-content-center mt-4 align-items-center">
 
+                    <div class="d-flex  my-1 px-4">
+                        <p class="text-white">
+                            <span class="iconify" data-icon="tabler:mail" style="font-size: 24px;"></span>
+                            hello@movens.app
+                        </p>
+                    </div>
+
+                    <div class="d-flex  my-1 px-4">
+                        <p class="text-white">
+                            <span class="iconify" data-icon="tabler:cloud-download" style="font-size: 24px;"></span>
+                            Download Media Kit
+                        </p>
+                    </div>
+
+                </div>
+                <p class="text-white my-5 pb-5 text-center">
+                    COPYRIGHT MOVENS 2022 - ALL RIGHT RESERVED | POWERED By EO
+                </p>
             </div>
-            <p class="text-white my-5 pb-5 text-center">
-                COPYRIGHT MOVENS 2022 - ALL RIGHT RESERVED | POWERED By EO
-            </p>
         </div>
     </div>
+</section>
 
+<footer>
 
 </footer>
 
@@ -535,6 +570,10 @@
 })
 
 </script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>-->
+<!--<script src="assets/js/timeline.js"></script>-->
+<script src="assets/js/slide.js"></script>
 
 </body>
 </html>
