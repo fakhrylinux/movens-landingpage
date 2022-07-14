@@ -143,6 +143,25 @@ section#features .container {
     /*background-size: cover;*/
 }
 
+.section-title {
+    background: #ff4aab;
+    /*border: 2px solid #ff4aab;*/
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.section-title p {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height, or 104% */
+
+    letter-spacing: 0.005em;
+
+}
+
 @media screen and (max-width: 575px) {
     section#hero {
         height: 90vw;
@@ -464,12 +483,12 @@ section#features .container {
         height: auto;
         z-index: -1;
         /*top: -800px;*/
-        left: 200px;
-        bottom: 200px;
+        left: 500px;
+        bottom: 150px;
     }
 
     section#features {
-        margin-top: -30rem;
+        margin-top: -15rem;
         background: url("../images/bg-features.png");
         /*background-size: 85rem auto ;*/
         background-size: 95vw auto;
