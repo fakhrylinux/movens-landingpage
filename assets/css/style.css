@@ -273,6 +273,10 @@ section#features .container {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
     }
+
+    .partner-container {
+        margin-bottom: 160px;
+    }
 }
 
 /*Medium display 576px - 767px*/
@@ -391,6 +395,10 @@ section#features .container {
         -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
+    }
+
+    .partner-container {
+        margin-bottom: 160px;
     }
 }
 
@@ -579,12 +587,9 @@ header.masthead > div > div > p {
 
 /*Full Width Video CSS End*/
 
-header.masthead h1, header.masthead .h1 {
-    /*font-size: 2.25rem;*/
-}
 
 video {
-    /*position: relative;*/
+
     z-index: -1;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -592,21 +597,6 @@ video {
     transition: all 1s;
 }
 
-/*.play-btn {*/
-/*    width: 100px;*/
-/*    background-color: #666;*/
-/*    border: medium none;*/
-/*    color: #fff;*/
-/*    display: block;*/
-/*    font-size: 18px;*/
-/*    left: 0;*/
-/*    margin: 0 auto;*/
-/*    padding: 8px 16px;*/
-/*    position: relative;*/
-/*    right: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
 
 section#roadmap {
     background: url("../images/bg-roadmap.png");
@@ -860,15 +850,6 @@ section#mockup {
     background: url("../images/bg-footer.png");
     background-size: cover;
 }
-
-/*footer h1 {*/
-/*    font-family: 'Monument Extended', sans-serif;*/
-/*    font-style: normal;*/
-/*    font-weight: 800;*/
-/*    font-size: 2.25rem;*/
-/*    line-height: 43px;*/
-/*    color: #FFFFFF;*/
-/*}*/
 
 section#mockup h1 span.h1-outline {
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
