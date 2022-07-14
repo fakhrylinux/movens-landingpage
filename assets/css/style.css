@@ -182,6 +182,7 @@ section#features .container {
 
     .intro-desc {
         /*font-family: "Monument Extended", sans-serif;*/
+        font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
@@ -310,6 +311,7 @@ section#features .container {
 
     .intro-desc {
         /*font-family: "Monument Extended", sans-serif;*/
+        font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
@@ -431,6 +433,7 @@ section#features .container {
 
     .intro-desc {
         /*font-family: "Monument Extended", sans-serif;*/
+        font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
@@ -871,6 +874,11 @@ section#mockup h1 span.h1-outline {
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+}
+
+.footer {
+    font-family: "Readex Pro", sans-serif;
+
 }
 
 a.socmed-icon:hover {
