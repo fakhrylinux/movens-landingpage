@@ -12,7 +12,7 @@ function next () {
 function previous () {
   const slider = document.querySelector('.slider')
   let leftVal = parseInt(slider.style.left)
-  if (leftVal <= -190) {
+  if (leftVal <= -380) {
     let styleLeft = leftVal + 190
     slider.style.left = `${styleLeft}px`
   }
