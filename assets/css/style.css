@@ -222,7 +222,7 @@ section#features .container {
 
     section#features {
         /*margin-top: -2.5rem;*/
-        background: url("../images/bg-features.png");
+        background: url("../images/bg-features-noline.png");
         background-size: 98vw 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -349,7 +349,7 @@ section#features .container {
 
     section#features {
         /*margin-top: -2.5rem;*/
-        background: url("../images/bg-features.png");
+        background: url("../images/bg-features-noline.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -489,7 +489,7 @@ section#features .container {
 
     section#features {
         margin-top: -15rem;
-        background: url("../images/bg-features.png");
+        background: url("../images/bg-features-noline.png");
         /*background-size: 85rem auto ;*/
         background-size: 95vw auto;
         background-repeat: no-repeat;
@@ -606,6 +606,18 @@ header.masthead > div > div > p {
 
 /*Full Width Video CSS End*/
 
+.trailer-container {
+    /*width: 1088px;*/
+    /*height: auto;*/
+    padding-bottom: 56.25%;
+    padding-top: 30px
+}
+
+.trailer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 video {
 
