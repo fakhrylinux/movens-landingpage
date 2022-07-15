@@ -222,7 +222,7 @@ section#features .container {
 
     section#features {
         /*margin-top: -2.5rem;*/
-        background: url("../images/bg-features-noline.png");
+        /*background: url("../images/bg-features-noline.png");*/
         background-size: 98vw 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -349,7 +349,7 @@ section#features .container {
 
     section#features {
         /*margin-top: -2.5rem;*/
-        background: url("../images/bg-features-noline.png");
+        /*background: url("../images/bg-features-noline.png");*/
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -489,7 +489,8 @@ section#features .container {
 
     section#features {
         margin-top: -15rem;
-        background: url("../images/bg-features-noline.png");
+        /*background: url("../images/bg-features-noline.png");*/
+        background: url("../images/bg-features.svg");
         /*background-size: 85rem auto ;*/
         background-size: 95vw auto;
         background-repeat: no-repeat;
