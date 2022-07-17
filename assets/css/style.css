@@ -180,7 +180,7 @@ section#features .container {
     }
 
     .badge-icon {
-        display: none;
+        display: none !important;
     }
 
     .container-intro {
