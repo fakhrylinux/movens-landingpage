@@ -87,7 +87,7 @@ nav {
 #navbar.navbar-shrink {
     /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
     /*background-color: rgba(255, 255, 255, 5%);*/
-    background-color: #1E2235;
+    background-color: rgba(30, 34, 53, 90%);
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -167,6 +167,10 @@ section#features .container {
 }
 
 @media screen and (max-width: 575px) {
+    #navbar {
+        height: 4.6875rem;
+    }
+
     section#hero {
         height: 90vw;
     }
@@ -304,6 +308,10 @@ section#features .container {
 
 /*Medium display 576px - 767px*/
 @media screen and (min-width: 576px) {
+    #navbar {
+        height: 6.25rem;
+    }
+
     section#hero {
         height: 90vw;
     }
@@ -426,6 +434,10 @@ section#features .container {
 }
 
 @media screen and (min-width: 992px) {
+    #navbar {
+        height: 6.25rem;
+    }
+
     section#hero {
         height: 75vw;
     }
