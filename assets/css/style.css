@@ -186,6 +186,7 @@ section#features .container {
         /*top: 10vw;*/
         width: 85vw;
         transform: translate(-50%, 5%);
+        margin-top: 5rem;
     }
 
     .badge-icon {
@@ -193,7 +194,7 @@ section#features .container {
     }
 
     .container-intro {
-        margin-top: -1rem;
+        margin-top: 4rem;
     }
 
     .intro-title {
@@ -327,10 +328,11 @@ section#features .container {
         /*top: 10vw;*/
         width: 85vw;
         transform: translate(-50%, 5%);
+        margin-top: 5rem;
     }
 
     .container-intro {
-        margin-top: -3rem;
+        margin-top: 4rem;
     }
 
     .intro-title {
