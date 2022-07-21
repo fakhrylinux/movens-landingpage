@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.cdnfonts.com/css/exton-free-trial');
-@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
-@import url('https://fonts.cdnfonts.com/css/goma-octagon');
 @import url('https://fonts.cdnfonts.com/css/monument-extended?styles=28544,28545');
 
 /*CSS Reset*/
@@ -14,8 +10,6 @@ html {
     font-size: 16px;
     height: 100%;
     width: 100%;
-    /*scroll-padding-top: calc(4.5rem - 1px);*/
-    /*overflow-x: hidden;*/
 }
 
 * {
@@ -127,7 +121,7 @@ a.dropdown-item {
 }
 
 section#hero {
-    background-image: url("../images/bg-hero-1920.png");
+    background-image: url("../images/bg-hero-1920-resize.png");
     background-size: cover;
     /*transform: translateY(1rem);*/
     /*height: 90vw;*/
@@ -620,12 +614,6 @@ header .overlay {
 header {
     /*background-image: url("../images/bg-hero.png");*/
     /*background-size: cover;*/
-}
-
-header.masthead > div > div > p {
-    /*font-family: "Exton Free Trial", monospace;*/
-    /*font-size: 3.75rem;*/
-    /*font-size: 4.5vw;*/
 }
 
 /*Full Width Video CSS End*/
