@@ -165,6 +165,13 @@ section#features .container {
 
 }
 
+.logo-partner {
+    height: auto;
+    max-height: 6.75rem;
+    width: auto;
+    max-width: 20rem
+}
+
 @media screen and (max-width: 575px) {
     #navbar {
         height: 4.6875rem;
