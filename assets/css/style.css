@@ -172,6 +172,41 @@ section#features .container {
     max-width: 20rem
 }
 
+.gradient-box {
+    border: 0.125rem solid transparent;
+    border-radius: 16px;
+    background: linear-gradient(269.04deg, rgba(49, 49, 73, 1) -7.65%, rgba(49, 49, 73, 0) 81.5%) padding-box,
+    linear-gradient(256.13deg, rgba(255, 255, 255, 0.5) -47.43%, rgba(255, 255, 255, 0) 60.88%) border-box;
+}
+
+
+.teams__name-box {
+    background: #9474FF;
+    border-radius: .5rem;
+}
+
+.teams__name {
+    font-family: "Monument Extended", sans-serif;
+    font-weight: 800;
+    line-height: 43px;
+    font-size: 2.25rem;
+}
+
+.teams__role {
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 1.125rem;
+}
+
+.teams__desc {
+    font-family: Readex Pro, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
 @media screen and (max-width: 575px) {
     #navbar {
         height: 4.6875rem;
@@ -275,6 +310,38 @@ section#features .container {
         font-size: 1.125rem;
         line-height: 22px;
         color: #FFFFFF;
+    }
+
+    .teams__name-box {
+        background: #9474FF;
+        border-radius: .5rem;
+    }
+
+    .teams__name {
+        /*font-family: "Monument Extended", sans-serif;*/
+        /*font-weight: 800;*/
+        /*line-height: 43px;*/
+        /*font-size: 2.25rem;*/
+
+        font-family: Monument Extended, sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 29px;
+    }
+
+    .teams__role {
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 700;
+        line-height: 12px;
+        font-size: 0.6rem;
+    }
+
+    .teams__desc {
+        font-family: Readex Pro, sans-serif;
+        font-size: 0.5rem;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0.03rem;
     }
 
     .desktop-image {
@@ -556,6 +623,33 @@ section#features .container {
         color: #FFFFFF;
     }
 
+    .teams__name-box {
+        background: #9474FF;
+        border-radius: .5rem;
+    }
+
+    .teams__name {
+        font-family: "Monument Extended", sans-serif;
+        font-weight: 800;
+        line-height: 43px;
+        font-size: 2.25rem;
+    }
+
+    .teams__role {
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 700;
+        line-height: 24px;
+        font-size: 1.125rem;
+    }
+
+    .teams__desc {
+        font-family: Readex Pro, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+
     .mobile-image {
         display: none;
     }
@@ -569,7 +663,11 @@ section#features .container {
     }
 
     section#partnership {
-        margin-bottom: 30rem;
+        /*margin-bottom: 10rem;*/
+    }
+
+    section#teams {
+        margin-bottom: 25rem;
     }
 
     section#mockup h1 {
