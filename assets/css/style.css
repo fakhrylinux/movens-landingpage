@@ -4,7 +4,6 @@
 @import url('https://fonts.cdnfonts.com/css/monument-extended?styles=28544,28545');
 
 /*CSS Reset*/
-
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -20,13 +19,10 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    /*margin: 0;*/
-    /*padding: 0;*/
     max-width: 100%;
 }
 
 body {
-    /*background: url("../images/background-693-1024.png");*/
     background-color: #1E2235;
     background-size: cover;
     font-weight: normal;
@@ -42,7 +38,6 @@ body {
 }
 
 .d-flex {
-    /*display: -webkit-flex !important;*/
     display: flex !important;
 }
 
@@ -58,7 +53,6 @@ ol, ul {
 }
 
 img {
-    /*width: 100vw;*/
     max-width: 100%;
     height: auto;
 }
@@ -68,41 +62,23 @@ img {
     padding-right: 0;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    /*background-color: rgba(2, 14, 28, 0.5);*/
-    /*height: 6.25rem;*/
-}
-
-#navbar {
-    /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
+.bd-navbar {
     background-color: rgba(255, 255, 255, 5%);
 }
 
-#navbar.navbar-shrink {
-    /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
-    /*background-color: rgba(255, 255, 255, 5%);*/
-    background-color: rgba(30, 34, 53, 95%);
+.navbar-shrink {
+    background-color: rgba(30, 34, 53, .95);
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    /*color: yellow;*/
-}
-
-.navbar-dark .navbar-toggler {
-    border-color: transparent;
+.navbar-toggler {
+    border-color: transparent!important;
     color: transparent;
     padding: 0;
 }
 
-/*.fixed-top {*/
-
-/*}*/
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 
 .nav-link {
     font-family: "Readex Pro", sans-serif;
@@ -123,14 +99,9 @@ a.dropdown-item {
 section#hero {
     background-image: url("../images/bg-hero-1920-resize.png");
     background-size: cover;
-    /*transform: translateY(1rem);*/
-    /*height: 90vw;*/
 }
 
 section#hero .hero-img {
-    /*left: 1000px;*/
-    /*top: 800px;*/
-    /*top: 10vw;*/
     transform: translate(-50%, 5%);
 }
 
@@ -141,14 +112,8 @@ section#hero .hero-img {
     -webkit-text-stroke-color: white;
 }
 
-section#features .container {
-    /*background: url("../images/bg-features.png");*/
-    /*background-size: cover;*/
-}
-
 .section-title {
     background: #ff4aab;
-    /*border: 2px solid #ff4aab;*/
     padding: 10px;
     border-radius: 50px;
 }
@@ -159,8 +124,6 @@ section#features .container {
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
-    /* identical to box height, or 104% */
-
     letter-spacing: 0.005em;
 
 }
@@ -208,18 +171,11 @@ section#features .container {
 }
 
 @media screen and (max-width: 575px) {
-    #navbar {
-        height: 4.6875rem;
-    }
-
     section#hero {
         height: 90vw;
     }
 
     section#hero .hero-img {
-        /*left: 1000px;*/
-        /*top: 800px;*/
-        /*top: 10vw;*/
         width: 85vw;
         transform: translate(-50%, 5%);
         margin-top: 5rem;
@@ -234,28 +190,22 @@ section#features .container {
     }
 
     .intro-title {
-        /*font-family: "Monument Extended", serif;*/
         font-family: "Monument Extended", sans-serif;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 800;*/
         font-size: 1.5rem;
         line-height: 28.8px;
     }
 
     .intro-title p {
-        /*font-family: "Monument Extended Bold", sans-serif;*/
         font-weight: 800;
-
     }
 
     .intro-desc {
-        /*font-family: "Monument Extended", sans-serif;*/
         font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 400;*/
         font-size: 1.25rem;
         line-height: 20px;
     }
@@ -264,15 +214,7 @@ section#features .container {
         font-weight: 400;
     }
 
-    .mockup-intro {
-        /*height: auto;*/
-        /*z-index: -1;*/
-        /*top: -800px;*/
-    }
-
     section#features {
-        /*margin-top: -2.5rem;*/
-        /*background: url("../images/bg-features-noline.png");*/
         background-size: 98vw 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -299,7 +241,6 @@ section#features .container {
         font-weight: 400;
         font-size: 1rem;
         line-height: 24px;
-        /* or 150% */
         letter-spacing: 0.5px;
     }
 
@@ -318,11 +259,6 @@ section#features .container {
     }
 
     .teams__name {
-        /*font-family: "Monument Extended", sans-serif;*/
-        /*font-weight: 800;*/
-        /*line-height: 43px;*/
-        /*font-size: 2.25rem;*/
-
         font-family: Monument Extended, sans-serif;
         font-size: 1rem;
         font-weight: 800;
@@ -356,10 +292,6 @@ section#features .container {
         display: block;
     }
 
-    .slider {
-        /*left: -190px !important;*/
-    }
-
     section#mockup h1 {
         font-family: 'Monument Extended', sans-serif;
         font-style: normal;
@@ -382,18 +314,11 @@ section#features .container {
 
 /*Medium display 576px - 767px*/
 @media screen and (min-width: 576px) {
-    #navbar {
-        height: 6.25rem;
-    }
-
     section#hero {
         height: 90vw;
     }
 
     section#hero .hero-img {
-        /*left: 1000px;*/
-        /*top: 800px;*/
-        /*top: 10vw;*/
         width: 85vw;
         transform: translate(-50%, 5%);
         margin-top: 5rem;
@@ -404,28 +329,22 @@ section#features .container {
     }
 
     .intro-title {
-        /*font-family: "Monument Extended", serif;*/
         font-family: "Monument Extended", sans-serif;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 800;*/
         font-size: 1.5rem;
         line-height: 28.8px;
     }
 
     .intro-title p {
-        /*font-family: "Monument Extended Bold", sans-serif;*/
         font-weight: 800;
-
     }
 
     .intro-desc {
-        /*font-family: "Monument Extended", sans-serif;*/
         font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 400;*/
         font-size: 1.25rem;
         line-height: 20px;
     }
@@ -435,8 +354,6 @@ section#features .container {
     }
 
     section#features {
-        /*margin-top: -2.5rem;*/
-        /*background: url("../images/bg-features-noline.png");*/
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -461,7 +378,6 @@ section#features .container {
         font-weight: 400;
         font-size: 1rem;
         line-height: 24px;
-        /* or 150% */
         letter-spacing: 0.5px;
     }
 
@@ -487,7 +403,6 @@ section#features .container {
     }
 
     section#mockup h1 {
-        /*width: 45vw;*/
         width: 49rem;
         font-family: 'Monument Extended', sans-serif;
         font-style: normal;
@@ -509,24 +424,13 @@ section#features .container {
 }
 
 @media screen and (min-width: 992px) {
-    #navbar {
-        height: 6.25rem;
-    }
-
     section#hero {
         height: 75vw;
     }
 
 
     section#hero .hero-img {
-        /*position: relative;*/
-        /*left: 1000px;*/
-        /*top: 800px;*/
-        /*top: 10vw;*/
-        /*top: 50%;*/
-        /*left: -50%;*/
         width: 70vw;
-        /*transform: translate(-50%, 5%);*/
     }
 
     .container-intro {
@@ -534,28 +438,22 @@ section#features .container {
     }
 
     .intro-title {
-        /*font-family: "Monument Extended", serif;*/
         font-family: "Monument Extended", sans-serif;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 800;*/
         font-size: 3.375rem;
         line-height: 65px;
     }
 
     .intro-title p {
-        /*font-family: "Monument Extended Bold", sans-serif;*/
         font-weight: 800;
-
     }
 
     .intro-desc {
-        /*font-family: "Monument Extended", sans-serif;*/
         font-family: "Readex Pro", sans-serif;
         width: 34.75rem;
         font-style: normal;
         color: #FFFFFF;
-        /*font-weight: 400;*/
         font-size: 1rem;
         line-height: 24px;
     }
@@ -570,19 +468,15 @@ section#features .container {
 
     .mockup-intro {
         position: relative;
-        /*background-color: white;*/
         height: auto;
         z-index: -1;
-        /*top: -800px;*/
         left: 500px;
         bottom: 150px;
     }
 
     section#features {
         margin-top: -15rem;
-        /*background: url("../images/bg-features-noline.png");*/
         background: url("../images/bg-features.svg");
-        /*background-size: 85rem auto ;*/
         background-size: 95vw auto;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -610,7 +504,6 @@ section#features .container {
         font-weight: 400;
         font-size: 1.125rem;
         line-height: 24px;
-        /* or 150% */
         letter-spacing: 0.5px;
     }
 
@@ -662,16 +555,11 @@ section#features .container {
         display: none;
     }
 
-    section#partnership {
-        /*margin-bottom: 10rem;*/
-    }
-
     section#teams {
         margin-bottom: 25rem;
     }
 
     section#mockup h1 {
-        /*width: 45vw;*/
         width: 49rem;
         font-family: 'Monument Extended', sans-serif;
         font-style: normal;
@@ -688,12 +576,8 @@ section#features .container {
     }
 
     .footer-mockup {
-        /*position: relative;*/
-        /*top: 190%;*/
         bottom: 600px;
         left: 44%;
-        /*transform: translate(-50%, -50%);*/
-        /*margin-bottom: -1500px;*/
         margin-top: -550px;
         margin-left: 40%;
     }
@@ -712,20 +596,11 @@ header .overlay {
     width: 100%;
     background-color: rgba(8, 27, 11, 0.3);
     z-index: 2;
-    /*opacity: 0.5;*/
-    /*z-index: 1;*/
-}
-
-header {
-    /*background-image: url("../images/bg-hero.png");*/
-    /*background-size: cover;*/
 }
 
 /*Full Width Video CSS End*/
 
 .trailer-container {
-    /*width: 1088px;*/
-    /*height: auto;*/
     padding-bottom: 56.25%;
     padding-top: 30px
 }
@@ -852,7 +727,6 @@ section#roadmap {
 
 .timeline-events li:first-child:before {
     background: #ff4aab;
-    /*background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmMGYwZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MyZTM0ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");*/
     background-size: 100%;
     background-image: linear-gradient(90deg, #1E2235 0, #ff4aab);
     border-radius: 0 6px 6px 0;
@@ -863,26 +737,12 @@ section#roadmap {
     line-height: 1.25rem;
 }
 
-/*.ezcwRl svg {*/
-/*    height: 22px;*/
-/*    color: white;*/
-/*    fill: white;*/
-/*    animation-iteration-count: infinite;*/
-/*    animation-timing-function: linear;*/
-/*}*/
-
-/*audio, canvas, embed, iframe, img, object, svg, video {*/
-/*    display: block;*/
-/*    vertical-align: middle;*/
-/*}*/
-
 .timeline-events h2 {
     font-family: "Readex Pro", serif;
     font-style: normal;
     font-weight: 700;
     color: #ff4aab;
     font-size: 1.375rem;
-    /*line-height: 28px;*/
     margin-bottom: 1.5rem;
 }
 
@@ -892,7 +752,6 @@ section#roadmap {
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 15px;
-    /* or 143% */
     letter-spacing: 0.25px;
     color: #FFFFFF;
     margin-bottom: 0.5rem;
@@ -901,12 +760,6 @@ section#roadmap {
 .timeline-event-years-2, .timeline-event-years-2:before {
     width: 200px;
 }
-
-/*.timeline-events h2, .timeline-events h3, .timeline-events h4 {*/
-/*    margin: 0 0 1px;*/
-/*    font-weight: 400;*/
-/*    font-size: 11px;*/
-/*}*/
 
 /*Phase 1*/
 .timeline-events li:nth-child(2) {
