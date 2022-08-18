@@ -28,17 +28,14 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   }
 
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 2000,
-    reset: true,
-  });
+  gsap.defaults({ease: 'power1'});
+  gsap.set('.lazy', {y: 50, opacity: 0});
 
-  sr.reveal(
-      `#introduction, #features, #tokenomics, #roadmap, #partnership, #teams, #mockup`,
-      {
-        interval: 200,
-      });
+  ScrollTrigger.batch('.lazy', {
+    onEnter: batch => gsap.to(batch,
+        {opacity: 1, y: 0, stagger: 0.5}),
+    // onLeaveBack: batch => gsap.to(batch,
+    //   { opacity: 0, y:100, stagger: 0.5 }),
+  });
 });
 
