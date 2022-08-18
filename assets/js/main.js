@@ -27,17 +27,18 @@ window.addEventListener('DOMContentLoaded', event => {
       offset: 74,
     });
   }
+
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true,
+  });
+
+  sr.reveal(
+      `#introduction, #features, #tokenomics, #roadmap, #partnership, #teams, #mockup`,
+      {
+        interval: 200,
+      });
 });
 
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 2000,
-  reset: true,
-});
-
-sr.reveal(
-    `#introduction, #features, #tokenomics, #roadmap, #partnership, #teams, #mockup`,
-    {
-      interval: 200,
-    });
