@@ -196,6 +196,7 @@ section#hero .hero-img {
     border-radius: 1rem 1rem 0 0;
     background: rgba(17, 24, 39, 0.25);
     backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
     /*opacity: 0;*/
     visibility: hidden;
     position: absolute;
