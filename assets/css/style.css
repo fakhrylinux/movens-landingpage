@@ -176,13 +176,37 @@ section#hero .hero-img {
 }
 
 .teams__desc {
-    /*font-family: Readex Pro, sans-serif;*/
-    /*font-size: 1rem;*/
-    /*font-weight: 400;*/
-    /*line-height: 24px;*/
-    /*letter-spacing: 1px;*/
     position: relative;
     top: -95px;
+}
+
+
+.carousel-cell:active .teams-description {
+    /*opacity: 1;*/
+    visibility: visible;
+}
+
+.teams-description:hover {
+    /*opacity: 1;*/
+    visibility: visible;
+}
+
+.teams-description {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(17, 24, 39, 0.25);
+    backdrop-filter: blur(32px);
+    /*opacity: 0;*/
+    visibility: hidden;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: "Readex Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /*.carousel:after {*/
