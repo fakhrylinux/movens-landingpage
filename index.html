@@ -12,6 +12,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.cdnfonts.com/css/goma-octagon" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/omnic-sans" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
@@ -290,20 +291,20 @@
             </div>
         </div>
 
-        <div class="mx-auto mobile-image lazy">
-            <div class="text-center my-5">
+        <div class="mx-auto mobile-image">
+            <div class="text-center my-5 lazy">
                 <img class="" src="assets/images/token-metrics-2x-mobile-v3.webp" alt="">
             </div>
-            <div class="text-center my-5">
+            <div class="text-center my-5 lazy">
                 <img src="assets/images/token-metrics-2-mobile.webp" alt="">
             </div>
         </div>
 
-        <div class="mx-auto desktop-image lazy">
-            <div class="text-center my-5">
+        <div class="mx-auto desktop-image">
+            <div class="text-center my-5 lazy">
                 <img class="" src="assets/images/token-metrics-2x-v3.webp" alt="">
             </div>
-            <div class="text-center my-5">
+            <div class="text-center my-5 lazy">
                 <img src="assets/images/token-metrics-2-2x.webp" alt="">
             </div>
         </div>
@@ -502,83 +503,63 @@
 </section>
 
 <section id="teams">
-    <div class="container py-5 ps-4 px-lg-4 mb-5 lazy">
+    <div class="container-team mx-auto py-5 ps-4 ps-lg-0 px-lg-0 mb-5 lazy">
         <div class="features mx-auto">
             <div class="my-4 intro-title lazy">
                 <p>TEAM</p>
             </div>
         </div>
 
-        <div class="row gradient-box pe-0 pe-lg-2 my-5 py-2 lazy">
-            <div class="col-3 align-items-center d-flex align-items-center">
-                <img src="assets/images/team-yuliana.png" alt="Yuliana K. Q.">
-            </div>
-            <div class="col-9">
-                <div class="teams__name-box py-1 px-3 py-lg-3 px-lg-3 mt-0 mt-lg-4">
-                    <p class="text-white teams__name">Yuliana K. Q.</p>
-                    <p class="text-white teams__role">Co-Founder, Product Owner</p>
-                </div>
-                <p class="text-white mt-3 teams__desc">Yuliana has over 3 years of technology experience in national
-                    companies. She has
-                    lead several tech
-                    transformation projects in her career and became active in blockchain sector in late 2017. Since
-                    2017, She has been an investor in several blockchain projects. At MOVENS, She leads technology ops
-                    and strategic partnerships.</p>
-            </div>
-        </div>
+        <!-- Carousel Tam -->
+        <div class="main-carousel carousel"
+             data-flickity='{ "wrapAround": false, "contain": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false, "freeScroll": true}'>
 
-        <div class="row gradient-box pe-0 pe-lg-2 my-5 py-2 lazy">
-            <div class="col-3 align-items-center d-flex align-items-center">
-                <img src="assets/images/team-ahmad-aman.png" alt="Ahmad Aman">
-            </div>
-            <div class="col-9">
-                <div class="teams__name-box py-1 px-3 py-lg-3 px-lg-3 mt-0 mt-lg-4">
-                    <p class="text-white teams__name">Ahmad Aman</p>
-                    <p class="text-white teams__role">Co-Founder, Project Manager</p>
+            <!-- Yuliana -->
+            <div class="carousel-cell mx-3 lazy">
+                <div class="teams-box p-3">
+                    <img src="assets/images/team-yuliana-v2.png" class="" alt="Yuliana K. Q.">
                 </div>
-                <p class="text-white mt-3 teams__desc">
-                    He worked as an e-commerce specialist with proven skills. Manage many of Amazon’s seller central
-                    accounts at Different Marketplaces from all over the world, including the USA, UK, CANADA, KSA, UAE,
-                    EUROPE, etc. He worked for over 7 years as Project Manager, Social Media Manager and Project Manager
-                    on MS. OFFICE, Twitter, Instagram, etc.
-                </p>
+                <div class="teams__desc px-3 text-start">
+                    <p class="text-white teams__name mb-2">Yuliana K. Q.</p>
+                    <p class="text-white teams__role text-wrap">Co-Founder, <br>Product Owner</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row gradient-box pe-0 pe-lg-2 my-5 py-2 lazy">
-            <div class="col-3 align-items-center d-flex align-items-center">
-                <img src="assets/images/team-odin.png" alt="Odin">
-            </div>
-            <div class="col-9">
-                <div class="teams__name-box py-1 px-3 py-lg-3 px-lg-3 mt-0 mt-lg-4">
-                    <p class="text-white teams__name">Umair Tariq</p>
-                    <p class="text-white teams__role">Design Lead</p>
+            <!-- Ahmad Aman -->
+            <div class="carousel-cell mx-3 lazy">
+                <div class="teams-box p-3">
+                    <img src="assets/images/team-ahmad-aman-v2.png" class="" alt="Ahmad Aman">
                 </div>
-                <p class="text-white mt-3 teams__desc">
-                    The most creative of the MOVENS team. ODIN has 9+ years of experience in the field of UX &
-                    Communication Design. He worked with many successfull projects and the teams in the space of
-                    blockchain. At MOVENS, He leads the design, with a good focus on user experience and the aesthetic
-                    side of the projects.
-                </p>
+                <div class="teams__desc px-3 text-start">
+                    <p class="text-white teams__name mb-2">Ahmad Aman</p>
+                    <p class="text-white teams__role text-wrap">Co-Founder, <br>Project Manager</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row gradient-box pe-0 pe-lg-2 my-5 py-2 lazy">
-            <div class="col-3 align-items-center d-flex align-items-center">
-                <img src="assets/images/team-lazarus.png" alt="Lazarus">
-            </div>
-            <div class="col-9">
-                <div class="teams__name-box py-1 px-3 py-lg-3 px-lg-3 mt-0 mt-lg-4">
-                    <p class="text-white teams__name">Lazarus</p>
-                    <p class="text-white teams__role">Head of Developer</p>
+            <!-- Umair Tariq -->
+            <div class="carousel-cell mx-3 lazy">
+                <div class="teams-box p-3">
+                    <img src="assets/images/team-umair-tariq-v2.png" class="" alt="Umair Tariq">
                 </div>
-                <p class="text-white mt-3 teams__desc">
-                    He has over 4 years of blockchain experience, since 2018 he has become an Early Inverstor Project.
-                    With 3 years of Blockchain Experience, he was launching, growing startups, and Developing strategies
-                    for business development. At MOVENS, He became an important figure assisting in yhe development.
-                </p>
+                <div class="teams__desc px-3 text-start">
+                    <p class="text-white teams__name mb-2">Umair Tariq</p>
+                    <p class="text-white teams__role text-wrap">Design Lead</p>
+                </div>
             </div>
+
+            <!-- Lazarus -->
+            <div class="carousel-cell mx-3 lazy">
+                <div class="teams-box p-3">
+                    <img src="assets/images/team-lazarus-v2.png" class="" alt="Lazarus">
+                </div>
+                <div class="teams__desc px-3 text-start">
+                    <p class="text-white teams__name mb-2">Lazarus</p>
+                    <p class="text-white teams__role text-wrap">Head of Developer</p>
+                </div>
+            </div>
+
         </div>
+        <!-- Carousel Team End -->
 
     </div>
 </section>
@@ -701,6 +682,7 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/slide.js"></script>
 
