@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/moveafjr/public_html/
+    - export DEPLOYPATH=/home/movensapp/public_html/
     - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
